@@ -1,0 +1,7 @@
+<input type="file" name="" value="" (change)="convertFile()" id="fileInput">
+<div *ngIf="noMatchingSchool">
+  <p> There were {{ total }} schools with no match</p>
+  <div>
+    <app-download [noMatchingSchool] ="noMatchingSchool"></app-download>
+  </div>
+</div>
